@@ -3,6 +3,7 @@
  */
 public class getBinaryValue {
     public static void main(String[] args) {
+
         int a = -10;
         int t;
         for(int i = 0 ; i < 32 ; i++) {
