@@ -1,5 +1,6 @@
 /**
  * Created by melon on 18-5-21.
+ * 输出32位某个数值的二进制值
  */
 public class getBinaryValue {
     public static void main(String[] args) {
@@ -14,8 +15,9 @@ public class getBinaryValue {
  *  >>>无符号右移，移出部分舍弃，左边位补0；
  *  数值用补码形式参与运算
  */
-            t = (a & 0x80000000 >>>i) >>> (31-i);
+            t = (a & 0x80000000 >>> i) >>> (31-i);
             System.out.print(t);
         }
+        System.out.println("\n二进制实际结果：" + Integer.toBinaryString(a));
     }
 }
